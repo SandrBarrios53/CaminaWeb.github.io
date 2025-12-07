@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Camina+ - Juego de Rehabilitación</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camina+</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- MENÚ DE NAVEGACIÓN -->
 <header>
   <nav class="menu">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="actividad1.html">Actividad 1</a></li>
-      <li><a href="actividad2.html">Actividad 2</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Jugar</a></li>
+      <li><a href="#">Contacto</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- TÍTULO DE LA PÁGINA -->
 <h1>Bienvenido a CAMINA+</h1>
 
-<!-- CONTENIDO INTERACTIVO -->
 <div id="contenido">
   <p>Haz clic para recibir un mensaje motivador del juego.</p>
   <button onclick="mostrarMensaje()">Motívame</button>
-
   <div id="mensajeInteractivo"></div>
 </div>
 
-
 <script>
 const mensajes = [
-"¡Tú puedes seguir avanzando!",
-"Cada paso cuenta, no te rindas.",
-"Hoy es un gran día para mejorar.",
-"Tu esfuerzo te hace más fuerte.",
-"¡Vamos, estás haciendo un gran trabajo!"
+  "¡Tú puedes seguir avanzando!",
+  "Cada paso cuenta, no te rindas.",
+  "Hoy es un gran día para mejorar.",
+  "Tu esfuerzo te hace más fuerte.",
+  "¡Vamos, estás haciendo un gran trabajo!"
 ];
 
 function mostrarMensaje() {
