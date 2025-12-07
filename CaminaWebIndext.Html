@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Camina+ - Juego de Rehabilitación</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f0f8ff;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+header {
+background: #3aa6ff;
+color: white;
+padding: 20px;
+font-size: 28px;
+font-weight: bold;
+}
+#contenido {
+padding: 30px;
+}
+button {
+padding: 12px 24px;
+font-size: 18px;
+border: none;
+border-radius: 10px;
+background: #3aa6ff;
+color: white;
+cursor: pointer;
+}
+button:hover {
+background: #1e8be6;
+}
+#mensajeInteractivo {
+margin-top: 20px;
+font-size: 22px;
+color: #333;
+}
+</style>
+</head>
+<body>
+<header>Bienvenido a CAMINA+</header>
+
+
+<div id="contenido">
+<p>Haz clic para recibir un mensaje motivador del juego.</p>
+<button onclick="mostrarMensaje()">Motívame</button>
+
+
+<div id="mensajeInteractivo"></div>
+</div>
+
+
+<script>
+const mensajes = [
+"¡Tú puedes seguir avanzando!",
+"Cada paso cuenta, no te rindas.",
+"Hoy es un gran día para mejorar.",
+"Tu esfuerzo te hace más fuerte.",
+"¡Vamos, estás haciendo un gran trabajo!"
+];
+
+
+function mostrarMensaje() {
+const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
+document.getElementById("mensajeInteractivo").textContent = mensaje;
+}
+</script>
+</body>
+</html>
